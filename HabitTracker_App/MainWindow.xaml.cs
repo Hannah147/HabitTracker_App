@@ -107,7 +107,6 @@ namespace HabitTracker_App
 
             if (selectedHabit != null)
             {
-
                 userInput = 0;
                 //tbxAddProgress.Clear();
                 tbxHabit.Text = selectedHabit.HabitName;
