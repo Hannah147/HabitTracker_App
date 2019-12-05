@@ -1,0 +1,23 @@
+﻿<Window x:Class="HabitTracker_App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HabitTracker_App"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <Label x:Name="lblAddProgress" Content="Add Progress" HorizontalAlignment="Left" Foreground="CornflowerBlue" Margin="240,82,0,0" VerticalAlignment="Top" Height="44" Width="154" FontSize="24" FontFamily="Ink Free"/>
+        <TextBox x:Name="tbxAddProgress" HorizontalAlignment="Left" Height="23" Margin="240,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154"/>
+        <Label x:Name="lblCurrent" Content="Current Progress" HorizontalAlignment="Left" Margin="240,172,0,0" VerticalAlignment="Top" FontFamily="Ink Free" Width="154" FontSize="18"/>
+        <TextBlock x:Name="tblkCurrent" HorizontalAlignment="Left" Margin="240,209,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" Text="tblk"/>
+        <Label x:Name="lblCurrent_Copy" Content="Target" HorizontalAlignment="Left" Margin="439,172,0,0" VerticalAlignment="Top" FontFamily="Ink Free" Width="91" FontSize="18"/>
+        <TextBlock x:Name="tblkTarget" HorizontalAlignment="Left" Margin="439,209,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" Text="tblk"/>
+        <TextBox x:Name="tbxHabit" HorizontalAlignment="Left" Height="44" Foreground="CornflowerBlue" Margin="240,33,0,0" TextWrapping="Wrap" Text="Habit" VerticalAlignment="Top" Width="353" FontSize="30" FontFamily="Ink Free" BorderThickness="0"/>
+        <ListBox x:Name="lbxAllHabits" HorizontalAlignment="Left" Height="143" Margin="28,82,0,0" VerticalAlignment="Top" Width="157" SelectionChanged="LbxAllHabits_SelectionChanged"/>
+        <Label x:Name="lblAllHabits" Content="All Habits" HorizontalAlignment="Left" Foreground="CornflowerBlue" Margin="31,33,0,0" VerticalAlignment="Top" Height="44" Width="154" FontSize="24" FontFamily="Ink Free"/>
+        <Button x:Name="btnAddProgress" Content="Add Progress" HorizontalAlignment="Left" Margin="439,126,0,0" VerticalAlignment="Top" Width="91" Height="23" Click="BtnAddProgress_Click"/>
+        <TextBlock x:Name="tblkAnswer" HorizontalAlignment="Left" Margin="240,257,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="290"/>
+
+    </Grid>
+</Window>
