@@ -102,24 +102,17 @@ namespace HabitTracker_App
         private void BtnAddProgress_Click(object sender, RoutedEventArgs e)
         {
             Habit selectedHabit = lbxAllHabits.SelectedItem as Habit;
-            //userInput = double.Parse(tbxAddProgress.Text);
-            //tblkCurrent.Text = addProgress(userInput).ToString();
 
             if (selectedHabit != null)
             {
-                userInput = 0;
-                //tbxAddProgress.Clear();
                 tbxHabit.Text = selectedHabit.HabitName;
                 tblkCurrent.Text = selectedHabit.HabitProgress.ToString();
                 tblkTarget.Text = selectedHabit.HabitTarget.ToString();
 
                 selectedHabit.HabitProgress = double.Parse(tbxAddProgress.Text);
-                //tblkCurrent.Text = addProgress(userInput).ToString();
                 selectedHabit.TotalProgress = addProgress(selectedHabit.HabitProgress) + selectedHabit.TotalProgress;
-                //selectedHabit.TotalProgress = selectedHabit.TotalProgress + selectedHabit.HabitProgress;
                 tblkCurrent.Text = selectedHabit.TotalProgress.ToString();
                 checkProgress(selectedHabit.HabitTarget, selectedHabit.TotalProgress);
-
             }
 
         }
