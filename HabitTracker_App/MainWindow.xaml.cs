@@ -21,8 +21,7 @@ namespace HabitTracker_App
     public partial class MainWindow : Window
     {
         List<Habit> allHabits = new List<Habit>();
-        static double total = 0, userInput = 0, finalTotal = 0, target = 0, progress = 0;
-        public static double TotalProgress;
+        static double total = 0;
         public MainWindow()
         {
             InitializeComponent();
@@ -77,7 +76,6 @@ namespace HabitTracker_App
             allHabits.Add(habit5);
 
             lbxAllHabits.ItemsSource = allHabits;
-            userInput = 0;
         }
 
         static double addProgress(double _progress)
