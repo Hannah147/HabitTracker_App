@@ -7,17 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
-        <Label x:Name="lblAddProgress" Content="Add Progress" HorizontalAlignment="Left" Foreground="CornflowerBlue" Margin="240,82,0,0" VerticalAlignment="Top" Height="44" Width="154" FontSize="24" FontFamily="Ink Free"/>
-        <TextBox x:Name="tbxAddProgress" HorizontalAlignment="Left" Height="23" Margin="240,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154"/>
-        <Label x:Name="lblCurrent" Content="Current Progress" HorizontalAlignment="Left" Margin="240,172,0,0" VerticalAlignment="Top" FontFamily="Ink Free" Width="154" FontSize="18"/>
-        <TextBlock x:Name="tblkCurrent" HorizontalAlignment="Left" Margin="240,209,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" Text="tblk"/>
-        <Label x:Name="lblCurrent_Copy" Content="Target" HorizontalAlignment="Left" Margin="439,172,0,0" VerticalAlignment="Top" FontFamily="Ink Free" Width="91" FontSize="18"/>
-        <TextBlock x:Name="tblkTarget" HorizontalAlignment="Left" Margin="439,209,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" Text="tblk"/>
-        <TextBox x:Name="tbxHabit" HorizontalAlignment="Left" Height="44" Foreground="CornflowerBlue" Margin="240,33,0,0" TextWrapping="Wrap" Text="Habit" VerticalAlignment="Top" Width="353" FontSize="30" FontFamily="Ink Free" BorderThickness="0"/>
-        <ListBox x:Name="lbxAllHabits" HorizontalAlignment="Left" Height="143" Margin="28,82,0,0" VerticalAlignment="Top" Width="157" SelectionChanged="LbxAllHabits_SelectionChanged"/>
+        <Label x:Name="lblAddProgress" Content="Add Progress" HorizontalAlignment="Left" Foreground="CornflowerBlue" Margin="240,164,0,0" VerticalAlignment="Top" Height="44" Width="154" FontSize="24" FontFamily="Ink Free"/>
+        <TextBox x:Name="tbxAddProgress" HorizontalAlignment="Left" Height="23" Margin="240,213,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154"/>
+        <Label x:Name="lblCurrent" Content="Current Progress" HorizontalAlignment="Left" Margin="240,241,0,0" VerticalAlignment="Top" FontFamily="Ink Free" Width="154" FontSize="18"/>
+        <TextBlock x:Name="tblkCurrent" HorizontalAlignment="Left" Margin="240,278,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154"/>
+        <Label x:Name="lblCurrent_Copy" Content="Target" HorizontalAlignment="Left" Margin="439,241,0,0" VerticalAlignment="Top" FontFamily="Ink Free" Width="91" FontSize="18"/>
+        <TextBlock x:Name="tblkTarget" HorizontalAlignment="Left" Margin="439,278,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154"/>
+        <ListBox x:Name="lbxAllHabits" HorizontalAlignment="Left" Height="233" Margin="28,82,0,0" VerticalAlignment="Top" Width="157" SelectionChanged="LbxAllHabits_SelectionChanged"/>
         <Label x:Name="lblAllHabits" Content="All Habits" HorizontalAlignment="Left" Foreground="CornflowerBlue" Margin="31,33,0,0" VerticalAlignment="Top" Height="44" Width="154" FontSize="24" FontFamily="Ink Free"/>
-        <Button x:Name="btnAddProgress" Content="Add Progress" HorizontalAlignment="Left" Margin="439,126,0,0" VerticalAlignment="Top" Width="91" Height="23" Click="BtnAddProgress_Click"/>
-        <TextBlock x:Name="tblkAnswer" HorizontalAlignment="Left" Margin="240,257,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="290"/>
+        <Button x:Name="btnAddProgress" Content="Add Progress" HorizontalAlignment="Left" Margin="439,213,0,0" VerticalAlignment="Top" Width="91" Height="23" Click="BtnAddProgress_Click"/>
+        <TextBlock x:Name="tblkAnswer" HorizontalAlignment="Left" Margin="240,299,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="290"/>
+        <Label x:Name="lblAddTarget" Content="Add Target" HorizontalAlignment="Left" Foreground="CornflowerBlue" Margin="240,82,0,0" VerticalAlignment="Top" Height="44" Width="154" FontSize="24" FontFamily="Ink Free"/>
+        <TextBox x:Name="tbxAddTarget" HorizontalAlignment="Left" Height="23" Margin="240,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154"/>
+        <Button x:Name="btnAddTarget" Content="Add Target" HorizontalAlignment="Left" Margin="439,131,0,0" VerticalAlignment="Top" Width="91" Height="23" Click="BtnAddTarget_Click"/>
+        <TextBlock x:Name="tblkGoal" HorizontalAlignment="Left" Margin="563,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="89" Width="205"/>
+        <TextBlock x:Name="tblkHabit" HorizontalAlignment="Left" Foreground="CornflowerBlue" Margin="240,33,0,0" TextWrapping="Wrap" Text="Habit" VerticalAlignment="Top" FontFamily="Ink Free" FontSize="30"/>
+        <TextBlock x:Name="tblkGoalHeading" Foreground="CornflowerBlue" HorizontalAlignment="Left" Margin="563,33,0,0" TextWrapping="Wrap" Text="Goal" VerticalAlignment="Top" FontFamily="Ink Free" FontSize="30"/>
 
     </Grid>
 </Window>
